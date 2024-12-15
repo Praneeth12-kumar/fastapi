@@ -12,12 +12,12 @@ json={
       },
       "players": {
         "winner": {
-          "name": "Player A",
+          "name": "novak djokovic",
           "player_id": "A001",
           "seed": 1
         },
         "loser": {
-          "name": "Player B",
+          "name": "roger federer",
           "player_id": "B001",
           "seed": 2
         }
@@ -91,7 +91,7 @@ json={
 }
 
 
-@app.get("/tennisscore")
+@app.get("/tennis")
 def root():
 	return json
 
