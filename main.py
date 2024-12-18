@@ -81,7 +81,7 @@ json={
           }
         ],
         "total_games_won": {
-          "winner_games_won": 17,
+          "": 17,
           "loser_games_won": 12
         }
       },
@@ -91,10 +91,18 @@ json={
 }
 
 
+sai_json={
+	"name":"sai_praneeth",
+	"age":int("24"),
+	"city":"visakhaptnam",
+	"college":"anil neerukonda institute of technology",
+	"branch":"civil engineering"
+}
 @app.get("/tennis")
 def root():
-	return json
+	return sai_json
 
-
-
+@app.get("/sai_praneeth")
+def sai():
+	return sai_json
 
